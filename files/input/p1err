@@ -1,0 +1,5 @@
+int 2x = 7; # error, variable names can't start with digits
+
+while (1 > 0) {
+    print("something");
+}

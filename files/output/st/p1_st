@@ -1,0 +1,10 @@
+  3 0                         
+  5 1                         
+  0 3                         
+  4 @"Introduceti numarul {i}: " 
+  8 @"Maximul este: {maxim}"  
+  9 @"Minimul else: {minim}"  
+  2 i                         
+  6 maxim                     
+  7 minim                     
+  1 v                         

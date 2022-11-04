@@ -1,0 +1,8 @@
+ 22 "Introduceti n: "         
+ 19 0                         
+ 24 1                         
+ 23 @"Introduceti numarul {i + 1}: " 
+ 25 @"Suma este: {sum}"       
+ 18 i                         
+ 21 n                         
+ 20 sum                       
