@@ -1,8 +1,6 @@
-import re
-
+from lab3.fa import NON_SYMBOL_TABLE_FA_S, SYMBOL_TABLE_FA_S
 from lab3.file_config import PIF_FILES_DIR, ST_FILES_DIR
 from lab3.pif import PIF
-from lab3.regexes import NON_SYMBOL_TABLE_REGEXES, SYMBOL_TABLE_REGEXES
 from lab3.symbol_table import SymbolTable
 from lab3.tokenizer import Tokenizer
 
@@ -43,14 +41,14 @@ class Controller:
         for line, token in tokenizer.get_tokens():
             matched = False
 
-            for regex, pif_label in NON_SYMBOL_TABLE_REGEXES:
-                if re.fullmatch(regex, token):
+            for fa, pif_label in NON_SYMBOL_TABLE_FA_S:
+                if fa.check_string(token):
                     matched = True
                     pif.insert((token, -1, pif_label))
                     break
 
-            for regex, pif_label in SYMBOL_TABLE_REGEXES:
-                if re.fullmatch(regex, token):
+            for fa, pif_label in SYMBOL_TABLE_FA_S:
+                if fa.check_string(token):
                     if not matched:
                         matched = True
                         position = st.insert(token) if (st_id := st.contains(token)) == -1 else st_id
