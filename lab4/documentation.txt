@@ -1,0 +1,23 @@
+State class
+    -> public attributes: label, value
+
+Transformation class
+    -> public attributes: initial_label, final_label, alphabet_element
+    -> public method transform(state): applies a transformation on the state object, if possible
+
+CSVReader class
+    -> takes a csv file path as an argument to the constructor
+    -> public method run(): returns an instance of a FA
+
+FA class
+    -> public attributes: initial_state_labels, final_state_labels, state_labels, alphabet, transformations
+    -> public property, is_deterministic
+    -> public methods:
+        * check_string(input_string): checks if a string is matched by the FA
+        * get_all_possible_final_states: tries to compute a list of all possible final states
+          (in case there are infinite possibilities, this will freeze)
+
+UI class
+    -> public method start(): prints a menu and asks for user input in a loop; used in the main.py module
+
+* The csv file that will be used is the one specified in the constants.py module

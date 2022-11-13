@@ -1,0 +1,16 @@
+state_label = ( lowercase_letter | uppercase_letter ) { lowercase_letter | uppercase_letter | digit }
+
+initial_state_statement = state_label ",initial" newline
+final_state_statement = state_label ",final" newline
+
+initial_states_list = initial_state_statement { initial_state_statement }
+final_states_list = final_state_statement { final_state_statement }
+
+# all ascii characters from ascii code 32 up to ascii code 126
+ascii_non_control_character = " " | "!" | ... | "}" | "~"
+alphabet_symbol = ascii_non_control_character
+
+transition = state_label "," alphabet_symbol "," state_label newline
+transition_list = transition { transition }
+
+csv_file_pattern = initial_states_list final_states_list transition_list
