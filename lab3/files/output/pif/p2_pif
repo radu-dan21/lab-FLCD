@@ -3,7 +3,7 @@
                                                  =  -1 operator  
                                               read  -1 keyword   
                                                  (  -1 separator 
-                      "Introduceti primul numar: "  11 constant  
+                      "Introduceti primul numar: "  11 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 
                                                int  -1 keyword   
@@ -11,7 +11,7 @@
                                                  =  -1 operator  
                                               read  -1 keyword   
                                                  (  -1 separator 
-            "Introduceti cel de al doilea numar: "  13 constant  
+            "Introduceti cel de al doilea numar: "  13 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 
                                                 if  -1 keyword   
@@ -47,7 +47,7 @@
                                                  (  -1 separator 
                                                  b  12 identifier
                                                =/=  -1 operator  
-                                                 0  15 constant  
+                                                 0  15 integer_constant
                                                  )  -1 separator 
                                                  {  -1 separator 
                                                aux  14 identifier
@@ -67,6 +67,6 @@
                                                  }  -1 separator 
                                              print  -1 keyword   
                                                  (  -1 separator 
-           @"Cel mai mare divizor comun este: {a}"  17 constant  
+           @"Cel mai mare divizor comun este: {a}"  17 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 

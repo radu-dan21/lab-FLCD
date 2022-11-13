@@ -2,20 +2,20 @@
                                                  [  -1 separator 
                                                int  -1 keyword   
                                                  ,  -1 separator 
-                                                 3   0 constant  
+                                                 3   0 integer_constant
                                                  ]  -1 separator 
                                                  v   1 identifier
                                                  ;  -1 separator 
                                                int  -1 keyword   
                                                  i   2 identifier
                                                  =  -1 operator  
-                                                 0   3 constant  
+                                                 0   3 integer_constant
                                                  ;  -1 separator 
                                              while  -1 keyword   
                                                  (  -1 separator 
                                                  i   2 identifier
                                                  <  -1 operator  
-                                                 3   0 constant  
+                                                 3   0 integer_constant
                                                  )  -1 separator 
                                                  {  -1 separator 
                                                  v   1 identifier
@@ -25,14 +25,14 @@
                                                  =  -1 operator  
                                               read  -1 keyword   
                                                  (  -1 separator 
-                      @"Introduceti numarul {i}: "   4 constant  
+                      @"Introduceti numarul {i}: "   4 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 
                                                  i   2 identifier
                                                  =  -1 operator  
                                                  i   2 identifier
                                                  +  -1 operator  
-                                                 1   5 constant  
+                                                 1   5 integer_constant
                                                  ;  -1 separator 
                                                  }  -1 separator 
                                                int  -1 keyword   
@@ -40,7 +40,7 @@
                                                  =  -1 operator  
                                                  v   1 identifier
                                                  [  -1 separator 
-                                                 0   3 constant  
+                                                 0   3 integer_constant
                                                  ]  -1 separator 
                                                  ;  -1 separator 
                                                int  -1 keyword   
@@ -48,18 +48,18 @@
                                                  =  -1 operator  
                                                  v   1 identifier
                                                  [  -1 separator 
-                                                 0   3 constant  
+                                                 0   3 integer_constant
                                                  ]  -1 separator 
                                                  ;  -1 separator 
                                                  i   2 identifier
                                                  =  -1 operator  
-                                                 1   5 constant  
+                                                 1   5 integer_constant
                                                  ;  -1 separator 
                                              while  -1 keyword   
                                                  (  -1 separator 
                                                  i   2 identifier
                                                  <  -1 operator  
-                                                 3   0 constant  
+                                                 3   0 integer_constant
                                                  )  -1 separator 
                                                  {  -1 separator 
                                                 if  -1 keyword   
@@ -68,7 +68,7 @@
                                                  [  -1 separator 
                                                  i   2 identifier
                                                  ]  -1 separator 
-                                                 >  -1 operator  
+                                                >=  -1 operator  
                                              maxim   6 identifier
                                                  )  -1 separator 
                                                  {  -1 separator 
@@ -101,11 +101,11 @@
                                                  }  -1 separator 
                                              print  -1 keyword   
                                                  (  -1 separator 
-                          @"Maximul este: {maxim}"   8 constant  
+                          @"Maximul este: {maxim}"   8 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 
                                              print  -1 keyword   
                                                  (  -1 separator 
-                          @"Minimul else: {minim}"   9 constant  
+                          @"Minimul else: {minim}"   9 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 

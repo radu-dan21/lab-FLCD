@@ -1,19 +1,19 @@
                                                int  -1 keyword   
                                                  i  18 identifier
                                                  =  -1 operator  
-                                                 0  19 constant  
+                                                 0  19 integer_constant
                                                  ;  -1 separator 
                                                int  -1 keyword   
                                                sum  20 identifier
                                                  =  -1 operator  
-                                                 0  19 constant  
+                                                 0  19 integer_constant
                                                  ;  -1 separator 
                                                int  -1 keyword   
                                                  n  21 identifier
                                                  =  -1 operator  
                                               read  -1 keyword   
                                                  (  -1 separator 
-                                 "Introduceti n: "  22 constant  
+                                 "Introduceti n: "  22 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 
                                              while  -1 keyword   
@@ -29,17 +29,17 @@
                                                  +  -1 operator  
                                               read  -1 keyword   
                                                  (  -1 separator 
-                  @"Introduceti numarul {i + 1}: "  23 constant  
+                  @"Introduceti numarul {i + 1}: "  23 string_constant
                                                  )  -1 separator 
                                                  i  18 identifier
                                                  =  -1 operator  
                                                  i  18 identifier
                                                  +  -1 operator  
-                                                 1  24 constant  
+                                                 1  24 integer_constant
                                                  ;  -1 separator 
                                                  }  -1 separator 
                                              print  -1 keyword   
                                                  (  -1 separator 
-                               @"Suma este: {sum}"  25 constant  
+                               @"Suma este: {sum}"  25 string_constant
                                                  )  -1 separator 
                                                  ;  -1 separator 
