@@ -1,0 +1,8 @@
+ 13 "Introduceti cel de al doilea numar: " 
+ 11 "Introduceti primul numar: " 
+ 15 0                         
+ 17 @"Cel mai mare divizor comun este: {a}" 
+ 10 a                         
+ 14 aux                       
+ 12 b                         
+ 16 mod                       
