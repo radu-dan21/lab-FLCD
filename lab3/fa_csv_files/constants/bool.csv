@@ -1,0 +1,11 @@
+q0,initial
+q1,final
+q0,t,q2
+q2,r,q3
+q3,u,q4
+q4,e,q1
+q0,f,q5
+q5,a,q6
+q6,l,q7
+q7,s,q8
+q8,e,q1
