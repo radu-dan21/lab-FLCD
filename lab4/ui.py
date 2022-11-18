@@ -1,3 +1,4 @@
+from lab4.constants import CSV_FILE_NAME
 from lab4.csv_reader import CSVReader
 from lab4.fa import FA
 
@@ -28,6 +29,7 @@ class UI:
 
     def print_menu(self):
         print(
+            f"\nCSV file: {CSV_FILE_NAME}"
             f"\nIs FA deterministic?: {self.fa.is_deterministic}"
             f"\nSet of states: {sorted(self.fa.state_labels)}"
             f"\nSet of initial states: {sorted(self.fa.initial_state_labels)}"
