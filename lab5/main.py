@@ -1,8 +1,8 @@
 from typing import Iterable, Optional
 
-from constants import INPUT_FILE
-from grammar import Grammar
-from file_io import read_lines
+from lab5.constants import INPUT_FILE
+from lab5.grammar import Grammar
+from lab5.file_io import read_lines
 
 
 def print_iter(iterable: Iterable, elem_prefix: Optional[str] = None):
@@ -13,12 +13,7 @@ def print_iter(iterable: Iterable, elem_prefix: Optional[str] = None):
         print(elem_prefix + str(elem))
 
 
-if __name__ == "__main__":
-    input_file_contents = read_lines(INPUT_FILE)
-
-    grammar = Grammar(input_file_contents)
-    grammar.process()
-
+def print_grammar_info(grammar):
     section_separator = f"\n{'-' * 100}\n"
 
     print(section_separator)
@@ -42,3 +37,15 @@ if __name__ == "__main__":
         print_iter(grammar.get_productions_for_non_terminal(nt), elem_prefix="\t")
 
     print(section_separator)
+
+
+def read_grammar():
+    input_file_contents = read_lines(INPUT_FILE)
+
+    grammar = Grammar(input_file_contents)
+    grammar.process()
+    return grammar
+
+
+if __name__ == "__main__":
+    print_grammar_info(read_grammar())

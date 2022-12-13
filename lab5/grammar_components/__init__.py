@@ -1,3 +1,3 @@
-from .grammar_component import GrammarComponent
-from .non_terminal import NonTerminal
-from .terminal import Terminal
+from lab5.grammar_components.grammar_component import *
+from lab5.grammar_components.non_terminal import *
+from lab5.grammar_components.terminal import *

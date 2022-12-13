@@ -2,8 +2,8 @@ import re
 
 from typing import List, Set, Type
 
-from grammar_components import GrammarComponent, NonTerminal, Terminal
-from production import Production
+from lab5.grammar_components import GrammarComponent, NonTerminal, Terminal
+from lab5.production import Production
 
 
 class Grammar:
@@ -17,6 +17,14 @@ class Grammar:
         self._equal_symbol: str = equal_symbol
         self._or_operator: str = or_operator
         self.productions: List[Production] = self.process()
+
+    @property
+    def equal_symbol(self):
+        return self._equal_symbol
+
+    @property
+    def or_operator(self):
+        return self._or_operator
 
     def process(self) -> List[Production]:
         productions: List[Production] = []

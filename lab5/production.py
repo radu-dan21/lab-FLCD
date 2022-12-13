@@ -1,6 +1,6 @@
 from typing import List, Set
 
-from grammar_components import GrammarComponent, NonTerminal, Terminal
+from lab5.grammar_components import GrammarComponent, NonTerminal, Terminal
 
 
 class Production:
