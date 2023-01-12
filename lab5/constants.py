@@ -1,1 +1,1 @@
-INPUT_FILE = "example_grammar.txt"
+INPUT_FILE = "toy_grammar.txt"

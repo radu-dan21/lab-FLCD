@@ -73,6 +73,9 @@ class Grammar:
     def get_productions_for_non_terminal(self, non_terminal: NonTerminal) -> Set[Production]:
         return set(filter(lambda p: p.does_contain_non_terminal(non_terminal), self.productions))
 
+    def get_productions_with_non_terminal_lhs(self, non_terminal: NonTerminal) -> Set[Production]:
+        return set(filter(lambda p: p.starts_with_non_terminal(non_terminal), self.productions))
+
     def is_context_free(self) -> bool:
         for production in self.productions:
             if len((lhs := production.lhs)) != 1 and not isinstance(lhs[0], NonTerminal):

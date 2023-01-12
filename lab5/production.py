@@ -31,7 +31,7 @@ class Production:
 
     def __eq__(self, other):
         return (
-            self.__class__ == other.__class__
+            isinstance(other, self.__class__)
             and self._lhs == other.lhs
             and self._rhs == other.rhs
         )
@@ -57,3 +57,7 @@ class Production:
 
     def does_contain_non_terminal(self, non_terminal: NonTerminal):
         return non_terminal in self._lhs + self._rhs
+
+    def starts_with_non_terminal(self, non_terminal: NonTerminal):
+        return len(self._lhs) == 1 and self._lhs[0] == non_terminal
+

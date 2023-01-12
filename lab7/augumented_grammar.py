@@ -1,27 +1,28 @@
 from typing import Optional, List
 
 from lab5 import Grammar, GrammarComponent, NonTerminal, Production
-
-from lab6.grammar_components import AugumentedStartingSymbol, Dot
+from lab7.augumented_production import AugumentedProduction
+from lab7.grammar_components import AugumentedStartingSymbol, Dot
 
 
 class AugumentedGrammar(Grammar):
-    def __init__(self, non_augumented_grammar: Grammar, starting_symbol: NonTerminal):  # noqa
+    def __init__(self, non_augumented_grammar: Grammar, starting_symbol: NonTerminal):
         self._non_augmented_grammar = non_augumented_grammar
         self._starting_symbol = starting_symbol
         super().__init__([])
 
-    def get_augumented_grammar_production(self, production: Production, idx: Optional[int] = None):
+    @staticmethod
+    def get_augumented_grammar_production(production: Production, idx: Optional[int] = None) -> AugumentedProduction:
         if idx is None:
             idx = 0
         rhs_copy: List[GrammarComponent] = production.rhs.copy()
         rhs_copy.insert(idx, Dot())
 
-        return Production(production.lhs, rhs_copy)
+        return AugumentedProduction(production.lhs, rhs_copy)
 
-    def process(self) -> List[Production]:
-        productions: List[Production] = [
-            Production(
+    def process(self) -> List[AugumentedProduction]:
+        productions: List[AugumentedProduction] = [
+            AugumentedProduction(
                 [AugumentedStartingSymbol(self._starting_symbol)],
                 [Dot(), self._starting_symbol]
             )
